@@ -5,11 +5,7 @@ const knex = require('knex')({
   connection: settings
 });
 
-const cliQuery = process.argv.slice(2,5);
-
-console.log(cliQuery);
-
-const [ firstName, lastName, birthDate ] = cliQuery;
+const [ firstName, lastName, birthDate ] = process.argv.slice(2,5);
 
 knex('famous_dickheads').returning(['id', 'first_name', 'last_name', 'birthdate'])
 .insert({ first_name: firstName, last_name: lastName, birthdate: birthDate })
