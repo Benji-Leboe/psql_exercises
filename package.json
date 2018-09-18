@@ -1,0 +1,14 @@
+{
+  "name": "db_exercises",
+  "version": "1.0.0",
+  "description": "psql exercises",
+  "main": "test_script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Benji-Leboe",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "7.4.3"
+  }
+}
