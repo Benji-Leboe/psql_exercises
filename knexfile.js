@@ -1,13 +1,37 @@
 const settings = require('./settings');
 
 module.exports = {
-  client: 'pg',
-  connection: {
-  user     : settings.user,
-  password : settings.password,
-  database : settings.database,
-  host     : settings.hostname,
-  port     : settings.port,
-  ssl      : settings.ssl
-}
+  development: {
+    client: 'pg',
+    connection: {
+    user     : settings.user,
+    password : settings.password,
+    database : settings.database,
+    host     : settings.hostname,
+    port     : settings.port,
+    ssl      : settings.ssl
+    }
+  },
+  staging: {
+    client: 'pg',
+      connection: {
+      user     : settings.user,
+      password : settings.password,
+      database : settings.database,
+      host     : settings.hostname,
+      port     : settings.port,
+      ssl      : settings.ssl
+    }
+  },
+  production: {
+    client: 'pg',
+      connection: {
+      user     : settings.user,
+      password : settings.password,
+      database : settings.database,
+      host     : settings.hostname,
+      port     : settings.port,
+      ssl      : settings.ssl
+    }
+  }
 }
